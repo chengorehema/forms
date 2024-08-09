@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title> Registration Form</title>
+</head>
+
+<body>
+    
+    <form action="" class="form">
+        <h1> REGISTRATION FORM </h1>
+        <h2> 1. Personal Information </h2>
+
+    <div>
+        <label for="fullName">Full Name:</label>
+        <div><input type="text" name="fullName" id="fullName" placeholder="Enter full name" autocomplete="off" required></div>
+    </div>
+    <br>
+    <div>
+        <label for="email">Email Address:</label>
+        <div><input type="email" id="email" name="email" placeholder="Enter your email" autocomplete="off" required></div>
+    </div>
+    <br>
+    <div>
+        <label for="phone">Phone Number:</label>
+        <div><input type="tel" name="phone" id="phone" placeholder="Enter phone number" autocomplete="off" required pattern="[0-9]{10}"></div>
+    </div>
+    <br>
+    <div>
+        <label for="street">Street Address:</label>
+        <div><input type="text" name="street" id="street" placeholder="Enter street address" autocomplete="off" required></div>
+        <br>
+        <label for="city">City:</label>
+        <div><input type="text" id="city" name="city" placeholder="Enter your city" required></div>
+        <br>
+        <label for="state">State:</label>
+        <div><input type="text" id="state" name="state" required placeholder="Enter your state"></div>
+        <br>
+        <label for="postalCode">Postal Code:</label>
+        <div><input type="text" id="postalCode" name="postalCode" required placeholder="Enter your postal code"></div>
+    </div>
+    <br>
+    <div>
+        <label for="DOB">Date of Birth:</label>
+        <div><input type="date" id="DOB" name="DOB" autocomplete="off" required placeholder="Enter date of birth"></div>
+    </div>
+    <br>
+    <div>
+        <label for="password">Password:</label>
+        <div><input type="password" name="password" id="password" autocomplete="off" required placeholder="Enter your password"></div>
+    </div>
+    <br>
+    <div>
+        <label for="confirmPassword">Confirm Password:</label>
+        <div><input type="password" name="confirmPassword" id="confirmPassword" autocomplete="off" required placeholder="Confirm your password"></div>
+    </div>
+    <br>
+
+    <h2> 2. Payment Information </h2>
+    <div>
+        <label for="creditCardNumber">Credit Card Number:</label>
+        <div><input type="text" name="creditCardNumber" id="creditCardNumber" autocomplete="off" required placeholder="Enter your credit card number"></div>
+    </div>
+    <br>
+    <label for="expirationMonth">Expiration Date:</label>
+    <div class="select">
+        <!-- <label for="expirationMonth">Expiration Date:</label> -->
+        <select id="expirationMonth" name="expirationMonth" required>
+            <option value="">Month</option>
+            <option value="01">01</option>
+            <option value="02">02</option>
+            <option value="03">03</option>
+            <option value="04">04</option>
+            <option value="05">05</option>
+            <option value="06">06</option>
+            <option value="07">07</option>
+            <option value="08">08</option>
+            <option value="09">09</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <!-- Add other months -->
+        </select>
+        <select id="expirationYear" name="expirationYear" required>
+            <option value="">Year</option>
+            <option value="2023">2023</option>
+            <option value="2024">2024</option>
+            <option value="2025">2025</option>
+            <option value="2026">2026</option>
+            <option value="2027">2027</option>
+            <option value="2028">2028</option>
+            <option value="2029">2029</option>
+            <option value="2030">2030</option>
+           <!-- Add other years -->
+        </select>
+    </div>
+    <br>
+    <div>
+        <label for="cvv">CVV:</label>
+        <div><input type="text" name="cvv" id="cvv" placeholder="Enter the card's security code" autocomplete="off" required></div>
+    </div>
+    <br>
+    <div>
+        <div><input type="checkbox" name="sameAddress" id="sameAddress"></div>
+        <label for="sameAddress">Billing address same as personal address</label>
+      </div>
+      <br>
+
+      <h2> 3. Additional Information </h2>
+                <!-- Preferred Contact Method -->
+      <div>
+        <label for="contact">Preferred Contact Method</label>
+        <div><input type="radio" name="contact" id="email"required readonly >email</div>
+        <div><input type="radio" name="contact" id="phone" required readonly >Phone</div>
+        <div><input type="radio" name="contact" id="SMS" required readonly >SMS</div>
+     </div>
+
+     <br>
+    
+     <div>
+        <div><input type="checkbox" id="subscribe" name="subscribe" value="yes" ></div>
+        <label for="subscribe">Subscribe to Newsletter</label>
+     </div>
+     <br>
+     <div>
+        <!-- Text area -->
+        <p>comments</p>
+    <div>
+        <textarea name="" id="" cols="60" rows="10"></textarea>
+    </div>
+    <!-- button tag / submit-->
+    <div>
+        <button type="submit">Submit</button>
+        <!-- <input type="button" value="submit" type="submit"> -->
+    </div>
+
+
+
+
+    
+
+    </form>
+</body>
+</html>
